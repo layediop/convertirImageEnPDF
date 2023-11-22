@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-color: #f0f0f0; /* Changer la couleur de fond si nécessaire */
 }
 
 .container {
@@ -13,4 +14,23 @@ body {
 .container h1,
 .container form {
     margin-bottom: 20px;
+}
+
+/* Style pour encadrer avec des cœurs */
+.heart-border {
+    font-family: Arial, sans-serif; /* Choix de la police */
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid #e53935; /* Couleur de la bordure */
+    border-radius: 20px; /* Arrondi des bords */
+}
+
+.heart-border::before,
+.heart-border::after {
+    content: '♥'; /* Le cœur */
+    display: block;
+    font-size: 40px;
+    color: #e53935; /* Couleur du cœur */
+    line-height: 1;
+    margin-bottom: 10px;
 }
